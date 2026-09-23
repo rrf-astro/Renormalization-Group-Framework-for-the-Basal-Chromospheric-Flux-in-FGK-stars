@@ -18,23 +18,23 @@ $$
 
 and uses the Rossby number
 
-\[
+$$
 Ro = \frac{P_{\rm rot}}{\tau_{\rm conv}}
-\]
+$$
 
 as the scale variable.
 
 For the selected FGK main-sequence sample in the unsaturated regime, the effective scaling relation is
 
-\[
+$$
 \epsilon \propto Ro^{-\omega}.
-\]
+$$
 
 The primary multivariate analysis of the full sample (\(N=1145\)) gives
 
-\[
+$$
 \omega = 0.900 \pm 0.047.
-\]
+$$
 
 The repository also contains the spectral-type fits and the robustness tests discussed in the manuscript.
 
