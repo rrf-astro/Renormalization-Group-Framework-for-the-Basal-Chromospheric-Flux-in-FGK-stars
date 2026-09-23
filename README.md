@@ -12,9 +12,9 @@ This repository contains the data-analysis pipeline, processed analysis data, ma
 
 The analysis describes the chromospheric excess above the basal Ca II H&K flux through the dimensionless quantity
 
-\[
+$$
 \epsilon = \frac{F_{\rm Ca}-F_{\rm bas}}{F_{\rm bas}},
-\]
+$$
 
 and uses the Rossby number
 
