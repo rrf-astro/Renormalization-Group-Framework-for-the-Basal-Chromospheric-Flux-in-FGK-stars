@@ -1,0 +1,13 @@
+# Core numerical and data-analysis packages
+numpy
+pandas
+matplotlib
+statsmodels
+
+# Astronomy and catalogue access
+astropy
+pyvo
+
+# Notebook environment
+jupyter
+ipykernel
