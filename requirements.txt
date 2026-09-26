@@ -3,6 +3,7 @@ numpy
 pandas
 matplotlib
 statsmodels
+scipy
 
 # Astronomy and catalogue access
 astropy

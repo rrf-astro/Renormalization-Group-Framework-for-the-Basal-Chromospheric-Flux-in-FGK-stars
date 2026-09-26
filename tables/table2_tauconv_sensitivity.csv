@@ -1,0 +1,4 @@
+calibration,F,G,K,mult
+Wright et al. (2011) [adopted],0.7213407974594032,1.0309646130063146,0.8225309598987031,0.9002
+Noyes et al. (1984),0.6548,1.1852,0.9271,0.9371
+|difference| (sigma of adopted fit),0.83,2.49,0.52,0.79

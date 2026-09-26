@@ -1,0 +1,126 @@
+{
+  "variable": "epsilon = (F_Ca - F_bas) / F_bas",
+  "sample": {
+    "N_total": 1145,
+    "N_Ye2024": 1095,
+    "N_supplementary": 50,
+    "selection_cascade": {
+      "raw parameter-complete": 1245,
+      "Ro > 0.13": 1243,
+      "+ epsilon > 0": 1138,
+      "+ logg >= 4.0": 1095
+    }
+  },
+  "primary_fit": {
+    "omega": 0.9002,
+    "omega_err": 0.0468,
+    "beta_T": -0.7452,
+    "R2": 0.3334,
+    "N": 1145,
+    "C0": -0.0167,
+    "r_Teff_logRo": -0.5104
+  },
+  "spectral_bands": {
+    "F": {
+      "omega": 0.7213,
+      "omega_err": 0.0799,
+      "N": 479,
+      "R2": 0.1461,
+      "logC": -0.3645,
+      "sigma_res": 0.391
+    },
+    "G": {
+      "omega": 1.031,
+      "omega_err": 0.062,
+      "N": 605,
+      "R2": 0.3146,
+      "logC": 0.0782,
+      "sigma_res": 0.2981
+    },
+    "K": {
+      "omega": 0.8225,
+      "omega_err": 0.2015,
+      "N": 61,
+      "R2": 0.2203,
+      "logC": 0.3108,
+      "sigma_res": 0.375
+    }
+  },
+  "inter_band_comparisons": {
+    "z_FG": 3.06,
+    "omega_GK": 1.013,
+    "omega_GK_err": 0.0592,
+    "z_GK_Skumanich": 0.22
+  },
+  "quadratic_curvature_test": {
+    "alpha_quad": 0.1578,
+    "F_quad": 1.578,
+    "p_quad": 0.20936644177171848
+  },
+  "metallicity": {
+    "N_FeH_native": 1095,
+    "beta_Fe": -0.2924,
+    "beta_Fe_err": 0.0653,
+    "p_beta_Fe": 8.322940686294392e-06,
+    "omega_with_FeH": 0.8453,
+    "omega_without_FeH": 0.8756,
+    "delta_omega_sigma": 0.616
+  },
+  "tau_conv_sensitivity": {
+    "omega": {
+      "Wright2011": {
+        "F": 0.7213407974594032,
+        "G": 1.0309646130063146,
+        "K": 0.8225309598987031,
+        "mult": 0.9002
+      },
+      "Noyes1984": {
+        "F": 0.6548,
+        "G": 1.1852,
+        "K": 0.9271,
+        "mult": 0.9371
+      }
+    },
+    "shift_sigma": {
+      "F": 0.83,
+      "G": 2.49,
+      "K": 0.52,
+      "mult": 0.79
+    }
+  },
+  "independent_validation": {
+    "N_logRHK": 68,
+    "logRHK_offset_dex": 0.165,
+    "logRHK_scatter_dex": 0.214,
+    "logRHK_corr": 0.617,
+    "N_Prot": 139,
+    "Prot_corr": 0.802,
+    "Prot_median_absdiff_d": 5.74,
+    "source": "Isaacson et al. (2024), J/ApJ/961/85; cross-match by Gaia DR3"
+  },
+  "additional_quantities": {
+    "N_astero": 1095,
+    "omega_t_astero": -0.0853,
+    "R2_astero": 0.0006,
+    "scatter_astero": 0.4092,
+    "chi2_astero": 183.213,
+    "N_fast_rotators": 0,
+    "g_star_UV": "schematic"
+  },
+  "solar_trajectory": {
+    "t_sun_gyro_Gyr": 5.04,
+    "logRo_sun": 0.3634,
+    "logeps_sun": -0.2337,
+    "eps_sun": 0.5839,
+    "slope_dlogeps_dlogt": -0.5095,
+    "offset_from_mean_relation": 0.1161,
+    "eps_1Gyr": 1.3315,
+    "eps_2Gyr": 0.9353,
+    "eps_5Gyr": 0.5864,
+    "eps_8Gyr": 0.4615,
+    "t_half_eps_Gyr": 19.65,
+    "t_crossover_eps1_Gyr": 1.75,
+    "dlogeps_1to8Gyr": 0.4601,
+    "dlogeps_track_total": 0.6095
+  }
+}

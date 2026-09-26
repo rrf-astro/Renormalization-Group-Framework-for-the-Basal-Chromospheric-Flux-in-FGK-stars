@@ -1,0 +1,77 @@
+========================================================================
+P6 -- REPRODUCIBILITY SUMMARY
+========================================================================
+Variable: epsilon = (F_Ca - F_bas) / F_bas
+
+SOURCES
+------------------------------------------------------------------------
+  Ye et al. (2024)         tier=1-TAP    N_rows=52321  parameter-complete N=1245
+  Supplementary sample     data/supplementary_stars.csv (N = 50)
+  Independent validation   data/ye_isaacson_crossmatch.csv (Isaacson et al. 2024; N_logRHK=68, N_Prot=139)
+
+SAMPLE COUNTS
+------------------------------------------------------------------------
+  raw parameter-complete       N = 1245
+  Ro > 0.13                    N = 1243
+  + epsilon > 0                N = 1138
+  + logg >= 4.0                N = 1095
+  + 50 supplementary stars     N = 1145
+
+FORMULAS IMPLEMENTED
+------------------------------------------------------------------------
+  tau_conv = 10^(1.16 - 1.49 logM - 0.54 log^2 M)      Wright et al. (2011), Eq. 11 (mass)
+  F_bas    = 10^(7.05 log Teff - 20.86)                Perez Martinez et al. (2014), Eq. 2
+  F_Ca     = 10^logR'HK+ * sigma_SB * Teff^4           C_cf = 1 (absorbed in the Ye et al. 2024 index)
+  Ro       = Prot / tau_conv ;  epsilon = (F_Ca - F_bas) / F_bas
+  selection: Ro > 0.13 ; epsilon > 0 ; logg >= 4.0
+
+PRIMARY RESULT
+------------------------------------------------------------------------
+  omega = 0.9002 +/- 0.0468   R2 = 0.3334   N = 1145
+  beta_T = -0.7452 dex/kK   C0 = -0.0167   r(Teff, log Ro) = -0.5104
+  omega_F = 0.7213 +/- 0.0799   N = 479   R2 = 0.1461
+  omega_G = 1.0310 +/- 0.0620   N = 605   R2 = 0.3146
+  omega_K = 0.8225 +/- 0.2015   N = 61   R2 = 0.2203
+  z(F,G) = 3.06   omega_GK = 1.0130 +/- 0.0592   (0.22 sigma from Skumanich omega=1)
+
+ROBUSTNESS
+------------------------------------------------------------------------
+  metallicity: beta_Fe = -0.2924, delta-omega = 0.616 sigma
+  tau_conv (Noyes vs Wright), sigma shift: F=0.83, G=2.49, K=0.52, mult=0.79
+  estimator: HC3 se=0.0484, bootstrap=0.8994+/-0.0485, Cook>4/N=52
+  S/N sensitivity: cut=0 omega=0.9002, cut=3 omega=0.8449, cut=5 omega=0.8018, cut=10 omega=0.6838
+  source heterogeneity: z(Ye vs supplementary) = 3.54 sigma, Ye fraction = 95.6%
+
+GATE STATUS
+------------------------------------------------------------------------
+  Source-data acquisition          PASS
+  Sample reconstruction            PASS
+  Supplementary sample             PASS
+  Combined working sample          PASS
+  Primary regression               PASS
+  Spectral-band fits               PASS
+  Independent OLS crosscheck       PASS
+  Inter-band comparisons           PASS
+  Auxiliary quantities / quadratic test PASS
+  Metallicity                      PASS
+  tau_conv sensitivity             PASS
+  F/G boundary sensitivity         PASS
+  Estimator robustness             PASS
+  S/N sensitivity                  PASS
+  Source heterogeneity             PASS
+  Independent validation           PASS
+  Additional manuscript quantities PASS
+  FINAL REPRODUCIBILITY GATE: PASSED
+
+FILES PRODUCED
+------------------------------------------------------------------------
+  data/fgk_activity_sample.csv
+  tables/table1_powerlaw_fits.csv
+  tables/table2_tauconv_sensitivity.csv
+  tables/table3_FG_boundary_sensitivity.csv
+  figures/fig1_activity_rossby.pdf
+  figures/fig2_rg_flow.pdf
+  figures/fig_validation_isaacson.pdf
+  results/main_results.json
+  results/robustness_results.json
+========================================================================

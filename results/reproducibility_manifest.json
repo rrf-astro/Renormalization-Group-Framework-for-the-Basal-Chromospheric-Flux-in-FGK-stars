@@ -1,0 +1,61 @@
+{
+  "pipeline_version": "1.0.0",
+  "analysis_status": "frozen",
+  "final_reproducibility_gate": true,
+  "python_version": "3.11.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "package_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "statsmodels": "0.14.6",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.8",
+    "astropy": "7.2.0",
+    "pyvo": "1.8.1"
+  },
+  "bootstrap_seed": 20260730,
+  "input_provenance": {
+    "Ye2024_acquisition": {
+      "tier": "1-TAP",
+      "endpoint": "TAPVizieR",
+      "n_rows": 52321,
+      "n_parameter_complete": 1245,
+      "sha256": null
+    },
+    "input_file_sha256": {
+      "data/supplementary_stars.csv": "10d6a10259db057a63c7b912c191a59c98dd6a1ba4692cfa5f9a2757c9c3aa1a",
+      "data/ye_isaacson_crossmatch.csv": "f44d2575c7ea02276f95aa59ea79a9d9cc6b2f08e9e32db65ff95f7c4f662f27",
+      "data/ye_bv_legacy.csv": "d8333a63f5a6b8d9d9369a657e1d5b6f83dd2c1c8048f09b283fced14691c15e"
+    }
+  },
+  "output_file_sha256": {
+    "data/fgk_activity_sample.csv": "d461c776b1bc8b0c122331a813b3843d1a1448cf0e5991b5f4b5fd64763a817a",
+    "tables/table1_powerlaw_fits.csv": "d498a9b9518e5eb5f9be19ab96b5d50e01e71362ca5b6f63805b760783f315d4",
+    "tables/table2_tauconv_sensitivity.csv": "356ac74cb6ee6c2d11db8ce45bb293f05ccbd586568decef25a069e04ffc7e1f",
+    "tables/table3_FG_boundary_sensitivity.csv": "fdd2873d23162a480b1f8bd9a01611211983be6c6e6fff9a603bc950eb1eaebe",
+    "figures/fig1_activity_rossby.pdf": "12ee6ed197454b068a03af44273fe0abb046a5aa6729080c10a0bf9c1902060c",
+    "figures/fig2_rg_flow.pdf": "539199a21c1dff5ee064c72a870aa3afe74cc90c682beeaa8195e52305c5e59b",
+    "figures/fig_validation_isaacson.pdf": "15e4f0b4feb5f7ce7cf077d7477a29ad4c1c22c53e2f48ec81eaaf67eab31f82",
+    "results/main_results.json": "947f1b8e02825c8f1811c33c32116805b451438503110c6c784110789d944a76",
+    "results/robustness_results.json": "ad174dee59de3e765a02b78ffd720e18e30610c80c49f19b9e7403334563fb3a"
+  },
+  "gate_checks": {
+    "source_acquisition": true,
+    "primary_sample_reconstruction": true,
+    "supplementary_sample": true,
+    "combined_sample": true,
+    "primary_regression": true,
+    "spectral_band_fits": true,
+    "independent_ols_crosscheck": true,
+    "inter_band_comparisons": true,
+    "auxiliary_quantities": true,
+    "metallicity": true,
+    "tau_conv_sensitivity": true,
+    "fg_boundary_sensitivity": true,
+    "estimator_robustness": true,
+    "measurement_error_snr_sensitivity": true,
+    "source_heterogeneity": true,
+    "independent_validation": true,
+    "additional_quantities": true
+  }
+}

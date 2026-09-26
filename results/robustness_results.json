@@ -1,0 +1,148 @@
+{
+  "estimator_robustness": {
+    "OLS": [
+      0.9002,
+      0.0468
+    ],
+    "HC3_se": 0.0484,
+    "breusch_pagan_LM": 15.37,
+    "breusch_pagan_p": 0.00045864680780263457,
+    "RLM_Huber": [
+      0.9505,
+      0.0373
+    ],
+    "RLM_Tukey": [
+      0.9575,
+      0.037
+    ],
+    "median_regression": [
+      0.9673,
+      0.0417
+    ],
+    "bootstrap_mean": 0.8994,
+    "bootstrap_sd": 0.0485,
+    "bootstrap_ci95": [
+      0.8056,
+      0.9947
+    ],
+    "n_cook_gt_4N": 52,
+    "seed": 20260730
+  },
+  "fg_boundary_sensitivity": [
+    {
+      "cut": 6000,
+      "N": 479,
+      "omega_uni": 0.7213,
+      "err_uni": 0.0799,
+      "z_uni": 3.06,
+      "omega_mult": 0.763,
+      "err_mult": 0.0922,
+      "z_mult": 3.1
+    },
+    {
+      "cut": 6100,
+      "N": 356,
+      "omega_uni": 0.6178,
+      "err_uni": 0.0921,
+      "z_uni": 3.72,
+      "omega_mult": 0.5439,
+      "err_mult": 0.1029,
+      "z_mult": 4.72
+    },
+    {
+      "cut": 6200,
+      "N": 259,
+      "omega_uni": 0.4722,
+      "err_uni": 0.1051,
+      "z_uni": 4.58,
+      "omega_mult": 0.3673,
+      "err_mult": 0.114,
+      "z_mult": 5.74
+    },
+    {
+      "cut": 6250,
+      "N": 202,
+      "omega_uni": 0.2671,
+      "err_uni": 0.1131,
+      "z_uni": 5.92,
+      "omega_mult": 0.1942,
+      "err_mult": 0.1197,
+      "z_mult": 6.83
+    },
+    {
+      "cut": 6300,
+      "N": 158,
+      "omega_uni": 0.1273,
+      "err_uni": 0.1208,
+      "z_uni": 6.66,
+      "omega_mult": 0.0302,
+      "err_mult": 0.1271,
+      "z_mult": 7.68
+    }
+  ],
+  "snr_sensitivity": {
+    "basal_floor_counts": {
+      "dF_lt_1sigma": 11,
+      "dF_lt_2sigma": 18,
+      "dF_lt_3sigma": 34,
+      "dF_lt_5sigma": 66
+    },
+    "n_sigma_log_eps_gt_010": 55,
+    "n_sigma_log_eps_gt_030": 14,
+    "median_sigma_log_eps": 0.0241,
+    "snr_sensitivity": [
+      {
+        "cut": 0,
+        "N": 1145,
+        "omega": 0.9002,
+        "err": 0.0468,
+        "shift_sigma": 0.0
+      },
+      {
+        "cut": 3,
+        "N": 1070,
+        "omega": 0.8449,
+        "err": 0.0396,
+        "shift_sigma": 1.18
+      },
+      {
+        "cut": 5,
+        "N": 1038,
+        "omega": 0.8018,
+        "err": 0.0371,
+        "shift_sigma": 2.11
+      },
+      {
+        "cut": 10,
+        "N": 893,
+        "omega": 0.6838,
+        "err": 0.0316,
+        "shift_sigma": 4.63
+      }
+    ]
+  },
+  "source_heterogeneity": {
+    "rows": [
+      {
+        "subsample": "Ye et al. (2024) only",
+        "N": 1095,
+        "omega": 0.8756,
+        "err": 0.0491
+      },
+      {
+        "subsample": "supplementary only",
+        "N": 50,
+        "omega": 1.3404,
+        "err": 0.1217
+      },
+      {
+        "subsample": "full sample",
+        "N": 1145,
+        "omega": 0.9002,
+        "err": 0.0468
+      }
+    ],
+    "z_Ye_vs_external": 3.54,
+    "Ye_fraction": 0.9563
+  }
+}

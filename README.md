@@ -12,29 +12,29 @@ This repository contains the data-analysis pipeline, processed analysis data, ma
 
 The analysis describes the chromospheric excess above the basal Ca II H&K flux through the dimensionless quantity
 
-$$
+\[
 \epsilon = \frac{F_{\rm Ca}-F_{\rm bas}}{F_{\rm bas}},
-$$
+\]
 
 and uses the Rossby number
 
-$$
+\[
 Ro = \frac{P_{\rm rot}}{\tau_{\rm conv}}
-$$
+\]
 
 as the scale variable.
 
 For the selected FGK main-sequence sample in the unsaturated regime, the effective scaling relation is
 
-$$
+\[
 \epsilon \propto Ro^{-\omega}.
-$$
+\]
 
 The primary multivariate analysis of the full sample (\(N=1145\)) gives
 
-$$
+\[
 \omega = 0.900 \pm 0.047.
-$$
+\]
 
 The repository also contains the spectral-type fits and the robustness tests discussed in the manuscript.
 
@@ -45,12 +45,18 @@ The repository also contains the spectral-type fits and the robustness tests dis
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
+├── Ye2024.tsv
+├── Gomes2021.tsv
+├── Wright2011.tsv
+├── Baliunas1996.tsv
+├── J_AJ_132_161_table2.tsv
 ├── notebooks/
 │   └── data_pipeline.ipynb
 ├── data/
 │   ├── fgk_activity_sample.csv
 │   ├── supplementary_stars.csv
 │   ├── ye_isaacson_crossmatch.csv
+│   ├── ye_bv_legacy.csv
 │   └── README.md
 ├── tables/
 │   ├── table1_powerlaw_fits.csv
@@ -62,7 +68,9 @@ The repository also contains the spectral-type fits and the robustness tests dis
 │   └── fig_validation_isaacson.pdf
 └── results/
     ├── main_results.json
-    └── robustness_results.json
+    ├── robustness_results.json
+    ├── reproducibility_manifest.json
+    └── reproducibility_summary.txt
 ```
 
 ## Data
@@ -71,7 +79,9 @@ The working sample contains 1145 FGK main-sequence stars.
 
 The primary component consists of 1095 stars from the Ye et al. (2024) sample. An additional 50 stars from supplementary sources are included as described in the manuscript.
 
-The repository provides the processed dataset used in the statistical analysis and the supplementary measurements needed to reproduce the combined sample. Public source catalogues are not redistributed when they can be obtained from their original archives.
+The repository provides the processed dataset used in the statistical analysis and the supplementary measurements needed to reproduce the combined sample.
+
+Five raw source-catalogue TSV files are included at the repository root for transparency and offline reproducibility. Of these, only `Ye2024.tsv` is actually read by the notebook, as the local fallback tier of the Ye et al. (2024) acquisition (used only if the live VizieR TAP/HTTP services are unreachable). `Gomes2021.tsv`, `Wright2011.tsv`, `Baliunas1996.tsv`, and `J_AJ_132_161_table2.tsv` are not read by any notebook cell; they are included as a historical/provenance record of the catalogues consulted during development, not as pipeline inputs.
 
 See `data/README.md` for data provenance and column definitions.
 
