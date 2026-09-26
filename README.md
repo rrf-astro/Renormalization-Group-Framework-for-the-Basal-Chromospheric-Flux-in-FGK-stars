@@ -12,29 +12,29 @@ This repository contains the data-analysis pipeline, processed analysis data, ma
 
 The analysis describes the chromospheric excess above the basal Ca II H&K flux through the dimensionless quantity
 
-$$
+\[
 \epsilon = \frac{F_{\rm Ca}-F_{\rm bas}}{F_{\rm bas}},
-$$
+\]
 
 and uses the Rossby number
 
-$$
+\[
 Ro = \frac{P_{\rm rot}}{\tau_{\rm conv}}
-$$
+\]
 
 as the scale variable.
 
 For the selected FGK main-sequence sample in the unsaturated regime, the effective scaling relation is
 
-$$
+\[
 \epsilon \propto Ro^{-\omega}.
-$$
+\]
 
 The primary multivariate analysis of the full sample (\(N=1145\)) gives
 
-$$
+\[
 \omega = 0.900 \pm 0.047.
-$$
+\]
 
 The repository also contains the spectral-type fits and the robustness tests discussed in the manuscript.
 
@@ -65,7 +65,8 @@ The repository also contains the spectral-type fits and the robustness tests dis
 ├── figures/
 │   ├── fig1_activity_rossby.pdf
 │   ├── fig2_rg_flow.pdf
-│   └── fig_validation_isaacson.pdf
+│   ├── fig_validation_isaacson.pdf
+│   └── fig3_FG_boundary_omega.pdf
 └── results/
     ├── main_results.json
     ├── robustness_results.json
@@ -162,10 +163,10 @@ The principal numerical outputs are also provided in machine-readable form under
 
 The principal results reproduced by the notebook include:
 
-- full-sample multivariate exponent: $\omega = 0.900 \pm 0.047$;
-- F dwarfs: $\omega_F = 0.721 \pm 0.080$;
-- G dwarfs: $\omega_G = 1.031 \pm 0.062$;
-- K dwarfs: $\omega_K = 0.823 \pm 0.202$.
+- full-sample multivariate exponent: \(\omega = 0.900 \pm 0.047\);
+- F dwarfs: \(\omega_F = 0.721 \pm 0.080\);
+- G dwarfs: \(\omega_G = 1.031 \pm 0.062\);
+- K dwarfs: \(\omega_K = 0.823 \pm 0.202\).
 
 Additional robustness and sensitivity results are reported in the manuscript and exported by the notebook.
 
