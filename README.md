@@ -164,8 +164,8 @@ The principal results reproduced by the notebook include:
 
 - full-sample multivariate exponent: \(\omega = 0.900 \pm 0.047\);
 - F dwarfs: $\omega_F = 0.721 \pm 0.080$;
-- G dwarfs: \(\omega_G = 1.031 \pm 0.062\);
-- K dwarfs: \(\omega_K = 0.823 \pm 0.202\).
+- G dwarfs: $\omega_G = 1.031 \pm 0.062$;
+- K dwarfs: $\omega_K = 0.823 \pm 0.202$.
 
 Additional robustness and sensitivity results are reported in the manuscript and exported by the notebook.
 
