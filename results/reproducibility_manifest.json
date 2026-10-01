@@ -33,10 +33,11 @@
     "tables/table1_powerlaw_fits.csv": "d498a9b9518e5eb5f9be19ab96b5d50e01e71362ca5b6f63805b760783f315d4",
     "tables/table2_tauconv_sensitivity.csv": "356ac74cb6ee6c2d11db8ce45bb293f05ccbd586568decef25a069e04ffc7e1f",
     "tables/table3_FG_boundary_sensitivity.csv": "fdd2873d23162a480b1f8bd9a01611211983be6c6e6fff9a603bc950eb1eaebe",
-    "figures/fig1_activity_rossby.pdf": "12ee6ed197454b068a03af44273fe0abb046a5aa6729080c10a0bf9c1902060c",
-    "figures/fig2_rg_flow.pdf": "539199a21c1dff5ee064c72a870aa3afe74cc90c682beeaa8195e52305c5e59b",
-    "figures/fig_validation_isaacson.pdf": "15e4f0b4feb5f7ce7cf077d7477a29ad4c1c22c53e2f48ec81eaaf67eab31f82",
-    "results/main_results.json": "947f1b8e02825c8f1811c33c32116805b451438503110c6c784110789d944a76",
+    "figures/fig1_activity_rossby.pdf": "058826ed055f3b0a17c090e4ae2b27335d54d7d759934adf60cd84f774f79422",
+    "figures/fig2_rg_flow.pdf": "516361269a9120e30f49613f53140dc18463074595085cb6c68e12e61e9557b7",
+    "figures/fig_validation_isaacson.pdf": "ba30340e1b894e54b42998b63bd6868a543bff9a7a2ff75e8a0b8115aa100b6f",
+    "figures/fig3_FG_boundary_omega.pdf": "0322f807da3ded8b5927a1fc5c3c378783868f2a38fa7d9841fb92c6ea0b3f10",
+    "results/main_results.json": "2c64645d2a44f4ebf3b422da84b08c5aaaed552a525331c2a041eb74454a29a1",
     "results/robustness_results.json": "ad174dee59de3e765a02b78ffd720e18e30610c80c49f19b9e7403334563fb3a"
   },
   "gate_checks": {
@@ -56,6 +57,7 @@
     "measurement_error_snr_sensitivity": true,
     "source_heterogeneity": true,
     "independent_validation": true,
+    "external_validation_zhang": true,
     "additional_quantities": true
   }
 }
