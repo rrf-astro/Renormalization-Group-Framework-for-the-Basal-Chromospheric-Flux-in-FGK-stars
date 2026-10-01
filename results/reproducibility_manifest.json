@@ -33,11 +33,11 @@
     "tables/table1_powerlaw_fits.csv": "d498a9b9518e5eb5f9be19ab96b5d50e01e71362ca5b6f63805b760783f315d4",
     "tables/table2_tauconv_sensitivity.csv": "356ac74cb6ee6c2d11db8ce45bb293f05ccbd586568decef25a069e04ffc7e1f",
     "tables/table3_FG_boundary_sensitivity.csv": "fdd2873d23162a480b1f8bd9a01611211983be6c6e6fff9a603bc950eb1eaebe",
-    "figures/fig1_activity_rossby.pdf": "058826ed055f3b0a17c090e4ae2b27335d54d7d759934adf60cd84f774f79422",
-    "figures/fig2_rg_flow.pdf": "516361269a9120e30f49613f53140dc18463074595085cb6c68e12e61e9557b7",
-    "figures/fig_validation_isaacson.pdf": "ba30340e1b894e54b42998b63bd6868a543bff9a7a2ff75e8a0b8115aa100b6f",
-    "figures/fig3_FG_boundary_omega.pdf": "0322f807da3ded8b5927a1fc5c3c378783868f2a38fa7d9841fb92c6ea0b3f10",
-    "results/main_results.json": "2c64645d2a44f4ebf3b422da84b08c5aaaed552a525331c2a041eb74454a29a1",
+    "figures/fig1_activity_rossby.pdf": "b10523822241884c8c9d29c5751765d2c60b30e125603591eb1cc327530937d3",
+    "figures/fig2_rg_flow.pdf": "2f523135cfaa23be5721c95356aa3518339935e6b53a0913dc623076e7682739",
+    "figures/fig_validation_isaacson.pdf": "9bc4b37b81bea8da90974348370b35754e121059efe33ff8c954cbf2bd1ce8fc",
+    "figures/fig3_FG_boundary_omega.pdf": "cde42b2bdd32cccc7168da0330cf2e0e13390efb59e501a5363b795b8e46d109",
+    "results/main_results.json": "2483a15d6678df469f3d073d6074b8a6923d9a1d465b3b7995addbde94fdc758",
     "results/robustness_results.json": "ad174dee59de3e765a02b78ffd720e18e30610c80c49f19b9e7403334563fb3a"
   },
   "gate_checks": {

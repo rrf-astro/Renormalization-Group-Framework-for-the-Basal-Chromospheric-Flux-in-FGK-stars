@@ -123,7 +123,9 @@
     },
     "z_FG_zhang_floor": 1.9,
     "shift_sigma_teff_coverage": 1.62,
-    "shift_sigma_floor_calibration": 6.17
+    "own_floor_omega_mult_sameN788": 0.9469,
+    "own_floor_omega_mult_sameN788_err": 0.0587,
+    "shift_sigma_floor_calibration_sameN788": 5.44
   },
   "additional_quantities": {
     "N_astero": 1095,
